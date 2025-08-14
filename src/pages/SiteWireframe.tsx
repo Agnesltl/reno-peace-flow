@@ -1,3 +1,5 @@
+import wireframeImage from "@/assets/renovease-complete-wireframe.jpg";
+
 const SiteWireframe = () => {
   return (
     <div className="min-h-screen bg-background py-8">
@@ -7,14 +9,25 @@ const SiteWireframe = () => {
             RenovEase Website Wireframe
           </h1>
           <p className="text-lg text-muted-foreground mb-6">
-            Your wireframe is being generated. Please refresh the page in a moment.
+            Complete wireframe of your current website for UX/UI design reference
           </p>
+          <div className="bg-muted/50 p-4 rounded-lg inline-block mb-6">
+            <p className="text-sm text-muted-foreground">
+              💡 <strong>Right-click the image below → "Save image as"</strong> to download for your designer
+            </p>
+          </div>
         </div>
 
-        <div className="bg-card p-8 rounded-lg border">
-          <p className="text-center text-muted-foreground">
-            🎨 Wireframe loading... If this persists, the image may need to be regenerated.
-          </p>
+        <div className="bg-card p-4 rounded-lg border">
+          <img 
+            src={wireframeImage} 
+            alt="RenovEase Website Wireframe for UX/UI Design" 
+            className="w-full h-auto border border-border rounded"
+            onError={(e) => {
+              console.log("Image failed to load:", wireframeImage);
+              e.currentTarget.src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPldpcmVmcmFtZSBsb2FkaW5nLi4uPC90ZXh0Pjwvc3ZnPg==";
+            }}
+          />
         </div>
 
         <div className="mt-8 bg-card p-6 rounded-xl border">
