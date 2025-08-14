@@ -7,6 +7,9 @@ const HeroSection = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
       
+      {/* Hand-drawn sketch background */}
+      <div className="absolute inset-0 bg-sketch-pattern opacity-[0.03] bg-repeat" />
+      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">

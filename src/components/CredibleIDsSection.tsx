@@ -35,7 +35,9 @@ const CredibleIDsSection = () => {
   ];
 
   return (
-    <section id="ids" className="py-20 bg-background">
+    <section id="ids" className="py-20 bg-background relative overflow-hidden">
+      {/* Subtle sketch pattern background */}
+      <div className="absolute inset-0 bg-sketch-pattern opacity-[0.015] bg-repeat" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
