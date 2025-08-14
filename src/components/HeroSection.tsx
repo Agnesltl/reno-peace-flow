@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import bgSketchPattern from "@/assets/bg-sketch-pattern.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
       
       {/* Hand-drawn sketch background */}
-      <div className="absolute inset-0 bg-sketch-pattern opacity-[0.03] bg-repeat" />
+      <div 
+        className="absolute inset-0 opacity-[0.08] bg-repeat"
+        style={{
+          backgroundImage: `url(${bgSketchPattern})`,
+          backgroundSize: '400px 400px'
+        }}
+      />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">

@@ -2,6 +2,7 @@ import { Calendar, MessageCircle, CheckSquare, Lightbulb } from "lucide-react";
 import sketchKitchen from "@/assets/sketch-kitchen-plan.jpg";
 import sketchLivingRoom from "@/assets/sketch-living-room.jpg";
 import sketchTimeline from "@/assets/sketch-bathroom-timeline.jpg";
+import bgDesignElements from "@/assets/bg-design-elements.jpg";
 
 const FeaturesSection = () => {
   const features = [
@@ -34,7 +35,13 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="py-20 bg-gradient-section relative overflow-hidden">
       {/* Hand-drawn elements background */}
-      <div className="absolute inset-0 bg-design-elements opacity-[0.02] bg-repeat" />
+      <div 
+        className="absolute inset-0 opacity-[0.06] bg-repeat"
+        style={{
+          backgroundImage: `url(${bgDesignElements})`,
+          backgroundSize: '300px 300px'
+        }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
