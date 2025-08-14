@@ -9,7 +9,7 @@ const HeroSection = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 mb-8 animate-fade-in">
+          <div className="inline-block bg-white/95 backdrop-blur-md shadow-large border border-border/20 rounded-2xl px-8 py-6 mb-8 animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-2">
               Stress-Free Home
               <br />
