@@ -31,7 +31,12 @@ const CTASection = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg"
+            className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/70 px-8 py-4 text-lg font-semibold transition-all duration-300"
+            onClick={() => {
+              document.getElementById('ids')?.scrollIntoView({ 
+                behavior: 'smooth' 
+              });
+            }}
           >
             Browse Trusted IDs
           </Button>
