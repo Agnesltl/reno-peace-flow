@@ -47,26 +47,26 @@ const CTASection = () => {
           <div className="flex items-center space-x-4">
             <Button 
               variant="outline" 
-              className="border-white/30 text-white hover:bg-white/10 h-14 px-6"
+              className="border-white/40 bg-white/15 backdrop-blur-sm text-white hover:bg-white/25 hover:border-white/60 h-16 px-6 transition-all duration-300"
             >
               <div className="flex items-center space-x-3">
-                <Smartphone className="w-6 h-6" />
+                <Smartphone className="w-7 h-7" />
                 <div className="text-left">
-                  <div className="text-xs opacity-75">Download on the</div>
-                  <div className="text-sm font-semibold">App Store</div>
+                  <div className="text-xs opacity-90 font-medium">Download on the</div>
+                  <div className="text-base font-bold">App Store</div>
                 </div>
               </div>
             </Button>
 
             <Button 
               variant="outline" 
-              className="border-white/30 text-white hover:bg-white/10 h-14 px-6"
+              className="border-white/40 bg-white/15 backdrop-blur-sm text-white hover:bg-white/25 hover:border-white/60 h-16 px-6 transition-all duration-300"
             >
               <div className="flex items-center space-x-3">
-                <Download className="w-6 h-6" />
+                <Download className="w-7 h-7" />
                 <div className="text-left">
-                  <div className="text-xs opacity-75">Get it on</div>
-                  <div className="text-sm font-semibold">Google Play</div>
+                  <div className="text-xs opacity-90 font-medium">Get it on</div>
+                  <div className="text-base font-bold">Google Play</div>
                 </div>
               </div>
             </Button>
