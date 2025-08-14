@@ -22,7 +22,16 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-scale-in">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-hero px-8 py-4 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 shadow-hero px-8 py-4 text-lg"
+              onClick={() => {
+                // Scroll to the CTA section or you could implement signup modal
+                document.querySelector('section:last-of-type')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
+            >
               Get Started
             </Button>
             <Button 
