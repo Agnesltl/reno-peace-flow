@@ -49,11 +49,16 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* App Mockup */}
-          <div className="relative max-w-md mx-auto animate-float">
-            <div className="relative">
+          {/* App Mockup - Smaller and Interactive */}
+          <div className="relative max-w-xs mx-auto animate-float group cursor-pointer">
+            <div className="relative transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-2">
               {/* iPhone Frame */}
-              <div className="relative bg-card rounded-[3rem] p-2 shadow-hero">
+              <div className="relative bg-card rounded-[3rem] p-2 shadow-hero group-hover:shadow-large transition-shadow duration-300"
+                onClick={() => {
+                  // Add a click interaction - could show a modal or navigate
+                  console.log("App demo clicked!");
+                }}
+              >
                 <div className="bg-background rounded-[2.5rem] overflow-hidden">
                   {/* Screen Content - Enhanced RenovEase App Interface */}
                   <div className="aspect-[9/19.5] bg-gradient-to-b from-background to-secondary/20 relative">
