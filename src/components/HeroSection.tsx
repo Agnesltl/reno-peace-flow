@@ -8,12 +8,15 @@ const HeroSection = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
       
-      {/* Hand-drawn sketch background */}
+      {/* Hand-drawn sketch background - CSS Pattern Fallback */}
       <div 
-        className="absolute inset-0 opacity-[0.08] bg-repeat"
+        className="absolute inset-0 opacity-[0.05]"
         style={{
-          backgroundImage: `url(${bgSketchPattern})`,
-          backgroundSize: '400px 400px'
+          backgroundImage: `
+            linear-gradient(45deg, transparent 46%, #ddd 49%, #ddd 51%, transparent 54%),
+            linear-gradient(-45deg, transparent 46%, #ddd 49%, #ddd 51%, transparent 54%)
+          `,
+          backgroundSize: '30px 30px'
         }}
       />
       
