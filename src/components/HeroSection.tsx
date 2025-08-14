@@ -55,18 +55,73 @@ const HeroSection = () => {
               {/* iPhone Frame */}
               <div className="relative bg-card rounded-[3rem] p-2 shadow-hero">
                 <div className="bg-background rounded-[2.5rem] overflow-hidden">
-                  {/* Screen Content Placeholder */}
-                  <div className="aspect-[9/19.5] bg-gradient-hero relative">
-                    <div className="absolute inset-4 bg-background/10 rounded-xl backdrop-blur-sm">
-                      <div className="p-4 space-y-4">
-                        <div className="h-8 bg-background/20 rounded-lg"></div>
-                        <div className="space-y-2">
-                          <div className="h-4 bg-background/20 rounded w-3/4"></div>
-                          <div className="h-4 bg-background/20 rounded w-1/2"></div>
+                  {/* Screen Content - RenovEase App Interface */}
+                  <div className="aspect-[9/19.5] bg-background relative">
+                    {/* Status Bar */}
+                    <div className="h-6 bg-background flex items-center justify-between px-6 text-xs text-foreground">
+                      <span>9:41</span>
+                      <div className="flex space-x-1">
+                        <div className="w-4 h-2 bg-foreground rounded-sm opacity-60"></div>
+                        <div className="w-6 h-2 bg-foreground rounded-sm"></div>
+                      </div>
+                    </div>
+                    
+                    {/* App Header */}
+                    <div className="bg-primary text-white p-4">
+                      <h3 className="font-semibold text-sm">Kitchen Renovation</h3>
+                      <p className="text-xs opacity-90">Progress: 65% Complete</p>
+                    </div>
+                    
+                    {/* Progress Timeline */}
+                    <div className="p-4 space-y-3">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <div className="flex-1">
+                          <p className="text-xs font-medium text-foreground">Demolition</p>
+                          <p className="text-xs text-muted-foreground">Completed 3 days ago</p>
                         </div>
-                        <div className="grid grid-cols-2 gap-2">
-                          <div className="h-20 bg-background/20 rounded-lg"></div>
-                          <div className="h-20 bg-background/20 rounded-lg"></div>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-3 bg-primary rounded-full"></div>
+                        <div className="flex-1">
+                          <p className="text-xs font-medium text-foreground">Plumbing & Electrical</p>
+                          <p className="text-xs text-muted-foreground">In progress</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-3 bg-muted rounded-full"></div>
+                        <div className="flex-1">
+                          <p className="text-xs font-medium text-muted-foreground">Flooring</p>
+                          <p className="text-xs text-muted-foreground">Starts in 5 days</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Recent Comments */}
+                    <div className="px-4 pb-4">
+                      <h4 className="text-xs font-semibold text-foreground mb-2">Recent Updates</h4>
+                      <div className="bg-secondary/50 p-3 rounded-lg">
+                        <p className="text-xs text-foreground mb-1">Sarah (Designer)</p>
+                        <p className="text-xs text-muted-foreground">"Electrical work on schedule. Cabinet delivery confirmed for Friday."</p>
+                      </div>
+                    </div>
+                    
+                    {/* Bottom Navigation */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-background border-t border-border p-3">
+                      <div className="flex justify-around">
+                        <div className="text-center">
+                          <div className="w-6 h-6 bg-primary rounded mx-auto mb-1"></div>
+                          <span className="text-xs text-primary">Timeline</span>
+                        </div>
+                        <div className="text-center">
+                          <div className="w-6 h-6 bg-muted rounded mx-auto mb-1"></div>
+                          <span className="text-xs text-muted-foreground">Comments</span>
+                        </div>
+                        <div className="text-center">
+                          <div className="w-6 h-6 bg-muted rounded mx-auto mb-1"></div>
+                          <span className="text-xs text-muted-foreground">Ideas</span>
                         </div>
                       </div>
                     </div>
