@@ -1,4 +1,7 @@
 import { Calendar, MessageCircle, CheckSquare, Lightbulb } from "lucide-react";
+import sketchKitchen from "@/assets/sketch-kitchen-plan.jpg";
+import sketchLivingRoom from "@/assets/sketch-living-room.jpg";
+import sketchTimeline from "@/assets/sketch-bathroom-timeline.jpg";
 
 const FeaturesSection = () => {
   const features = [
@@ -62,6 +65,59 @@ const FeaturesSection = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Hand-drawn Design Process Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              From Sketch to Reality
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Just like Interior Designers sketch their ideas, RenovEase captures every detail of your renovation journey.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="relative mb-6 overflow-hidden rounded-2xl shadow-soft group-hover:shadow-medium transition-shadow duration-300">
+                <img 
+                  src={sketchKitchen} 
+                  alt="Hand-drawn kitchen renovation plan" 
+                  className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Plan & Design</h4>
+              <p className="text-muted-foreground text-sm">Capture initial sketches and design concepts</p>
+            </div>
+
+            <div className="text-center group">
+              <div className="relative mb-6 overflow-hidden rounded-2xl shadow-soft group-hover:shadow-medium transition-shadow duration-300">
+                <img 
+                  src={sketchTimeline} 
+                  alt="Hand-drawn renovation timeline" 
+                  className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Track Progress</h4>
+              <p className="text-muted-foreground text-sm">Monitor each phase from concept to completion</p>
+            </div>
+
+            <div className="text-center group">
+              <div className="relative mb-6 overflow-hidden rounded-2xl shadow-soft group-hover:shadow-medium transition-shadow duration-300">
+                <img 
+                  src={sketchLivingRoom} 
+                  alt="Hand-drawn living room concept" 
+                  className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Bring to Life</h4>
+              <p className="text-muted-foreground text-sm">See your designer's vision become reality</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
