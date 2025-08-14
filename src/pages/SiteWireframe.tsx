@@ -1,5 +1,3 @@
-import wireframeImage from "@/assets/renovease-website-wireframe.jpg";
-
 const SiteWireframe = () => {
   return (
     <div className="min-h-screen bg-background py-8">
@@ -9,24 +7,17 @@ const SiteWireframe = () => {
             RenovEase Website Wireframe
           </h1>
           <p className="text-lg text-muted-foreground mb-6">
-            Complete wireframe of your current website for UX/UI design reference
+            Your wireframe is being generated. Please refresh the page in a moment.
           </p>
-          <div className="bg-muted/50 p-4 rounded-lg inline-block mb-6">
-            <p className="text-sm text-muted-foreground">
-              💡 <strong>Right-click the image below → "Save image as"</strong> to download for your designer
-            </p>
-          </div>
         </div>
 
-        <div className="bg-white p-4 rounded-lg shadow-large">
-          <img 
-            src={wireframeImage} 
-            alt="RenovEase Website Wireframe for UX/UI Design" 
-            className="w-full h-auto border border-border rounded"
-          />
+        <div className="bg-card p-8 rounded-lg border">
+          <p className="text-center text-muted-foreground">
+            🎨 Wireframe loading... If this persists, the image may need to be regenerated.
+          </p>
         </div>
 
-        <div className="mt-8 bg-gradient-section p-6 rounded-xl">
+        <div className="mt-8 bg-card p-6 rounded-xl border">
           <h2 className="text-xl font-bold text-foreground mb-4">Wireframe Information:</h2>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div>
