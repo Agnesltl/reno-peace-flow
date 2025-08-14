@@ -9,13 +9,15 @@ const HeroSection = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-            Stress-Free Home
-            <br />
-            <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Renovations, Finally.
-            </span>
-          </h1>
+          <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-8 py-6 mb-8 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-2">
+              Stress-Free Home
+              <br />
+              <span className="bg-gradient-hero bg-clip-text text-transparent">
+                Renovations, Finally.
+              </span>
+            </h1>
+          </div>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up">
             Track progress, raise concerns, and work only with credible IDs—all in one app.
