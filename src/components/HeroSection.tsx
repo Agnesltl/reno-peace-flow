@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-import heroBanner from "@/assets/hero-banner-text.jpg";
 
 const HeroSection = () => {
   return (
@@ -10,13 +9,13 @@ const HeroSection = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <div className="mb-8 animate-fade-in">
-            <img 
-              src={heroBanner} 
-              alt="Stress-Free Home Renovations, Finally" 
-              className="max-w-full h-auto rounded-2xl shadow-large"
-            />
-          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
+            Stress-Free Home
+            <br />
+            <span className="bg-gradient-hero bg-clip-text text-transparent">
+              Renovations, Finally.
+            </span>
+          </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up">
             Track progress, raise concerns, and work only with credible IDs—all in one app.
