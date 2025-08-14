@@ -32,12 +32,6 @@ const Navigation = () => {
             <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
               Reviews
             </a>
-            <a href="/wireframes" className="text-muted-foreground hover:text-foreground transition-colors">
-              Wireframes
-            </a>
-            <a href="/wireframe-image" className="text-muted-foreground hover:text-foreground transition-colors">
-              Complete Wireframe
-            </a>
           </div>
 
           <Button size="sm" className="shadow-soft">
